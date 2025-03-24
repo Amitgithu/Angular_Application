@@ -3,8 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-angular-app';
+  title = 'MyAngular';
+
+  ngOnInit(): void {
+    console.log('Hello from ngOnInit');
+    this.title = 'Hello from BridgeLabz.';
+  }
 }
